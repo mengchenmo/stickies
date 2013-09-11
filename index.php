@@ -42,14 +42,14 @@
                 ran = Math.floor(Math.random()*4);
                 var color = '';
                 switch(ran) {
-                    case 0: color = '#ffc'; break;
-                    case 1: color = '#cfc'; break;
-                    case 2: color = '#cff'; break;
-                    case 3: color = '#fcf'; break;
+                    case 0: colorclass = 'note1'; break;
+                    case 1: colorclass = 'note2'; break;
+                    case 2: colorclass = 'note3'; break;
+                    case 3: colorclass = 'note4'; break;
                 }
                 id = "sticky" + Date.now();
                 console.log(id);
-                $('#main_canvas').append("<div class='sticky' id='"+id+"' style='background-color: "+color+"'><div class='delete'><a href='#' onclick='delete_sticky(\""+id.toString()+"\"); return false;'>x</a></div><span style='opacity: 0.3'>...</span><textarea onchange='change_text(this)'></textarea></div>");
+                $('#main_canvas').append("<div class='sticky "+colorclass+"' id='"+id+"'><div class='delete'><a href='#' onclick='delete_sticky(\""+id.toString()+"\"); return false;'>x</a></div><span style='opacity: 0.3'>...</span><textarea onchange='change_text(this)'></textarea></div>");
                 $('#' + id).css('left',x + 'px');
                 $('#' + id).css('top',y + 'px');
                 $('#' + id).draggable({

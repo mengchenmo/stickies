@@ -51,6 +51,22 @@ body {
     opacity: 0.3;
 }
 
+.note1 {
+    background-color: #ffc;
+}
+
+.note2 {
+    background-color: #cfc;
+}
+
+.note3 {
+    background-color: #fcf;
+}
+
+.note4 {
+    background-color: #cff;
+}
+
 .instructions {
     position: absolute;
     top: 0;
