@@ -17,6 +17,7 @@
         ?>
     </head>
     <body>
+ 
         <div id="main_canvas">
             <?php
 
@@ -85,5 +86,7 @@
             }
 
         </script>
+        
+        </div>
     </body>
 </html>
